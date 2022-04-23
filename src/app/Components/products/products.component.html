@@ -1,3 +1,4 @@
+<!-- Categories Section -->
 <div class="card-top container-fluid">
     <div class="row justify-content-center h-75">
         <div class="item col-1 text-center">
@@ -24,5 +25,20 @@
                 <h6>Mens Wear</h6>
             </a>
         </div>
+    </div>
+</div>
+
+<!-- Product List Section -->
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of productList">
+            <div class="card col-md-3">
+                <img [src]="item.image" [alt]="item.title" class="img-fluid h-50">
+                <h5>{{item.title}}</h5>
+                <h6>{{item.price|currency:'EGP'}}</h6>
+                <p>{{item.description}}</p>
+                <button class="btn btn-outline-secondary">Add to Cart</button>
+            </div>
+        </ng-container>
     </div>
 </div>
