@@ -1,0 +1,35 @@
+a{
+    text-decoration: none;
+    color:#2a2325;
+    font-weight: 500;
+}
+.card{
+    height: 60vh;
+    margin: 1.2rem;
+    padding: 1.2rem;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.cart-table{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: none;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: .25rem;
+}
+.center .btn{
+    font-size: 0.8rem !important;
+    margin-top: 1rem !important;
+    font-weight: 500;
+    padding: 0.7rem 0.7rem;
+    border-radius: 3px !important;
+}

@@ -1,1 +1,53 @@
-<p>cart works!</p>
+<!-- Cart Empty -->
+<ng-container *ngIf="false">
+    <div class="container">
+        <div class="card">
+            <h5 class="card-title"> My Cart </h5>
+        </div>
+        <div class="center">
+            <img src="../../../assets/Empty Cart.png" alt="Empty Cart" class="img-fluid"
+                style="width: 55%;height: 50%;">
+            <!-- <h4>Your Cart us EMPTY!</h4> -->
+            <h6>Add Item to it now</h6>
+            <button class="btn btn-outline-warning"><a routerLink="Products">Shop Now</a></button>
+        </div>
+    </div>
+</ng-container>
+
+<!-- Cart Full -->
+<ng-container *ngIf="true">
+    <div class="container">
+        <div class="card-table">
+            <div class="cart-product">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Sr.NO</th>
+                            <th>Product Name</th>
+                            <th>Product Image</th>
+                            <th>Descroption</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mobile</td>
+                            <td>Image</td>
+                            <td>this is brand</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>10000</td>
+                            <td>
+                                <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</ng-container>
