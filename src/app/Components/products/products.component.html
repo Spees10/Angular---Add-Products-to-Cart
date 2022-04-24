@@ -30,9 +30,9 @@
 
 <!-- Product List Section -->
 <div class="container">
-    <div class="row text-center">
+    <div class="row text-center justify-content-between">
         <ng-container *ngFor="let item of productList">
-            <div class="card col-md-3 mb-2">
+            <div class="card col-md-2 mb-2">
                 <img [src]="item.image" [alt]="item.title" class="img-fluid prdImg m-auto">
                 <h5 style="font-size: 1rem;">{{item.title}}</h5>
                 <hr>

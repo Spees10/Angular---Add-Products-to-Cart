@@ -15,7 +15,7 @@
 
 .prdImg{
     width: 60%;
-    height: 56%;
+    height: 50%;
     transition:  0.3s ease-in-out;
 }
 .prdImg:hover{
@@ -32,4 +32,9 @@
 
 .pointer:hover{
     cursor: pointer;
+}
+
+.card{
+    padding: 10px;
+    margin: 20px;
 }
