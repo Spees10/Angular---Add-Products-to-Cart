@@ -1,45 +1,45 @@
 <!-- Categories Section -->
 <div class="card-top container-fluid">
-    <div class="row justify-content-center h-75">
-        <div class="item col-1 text-center pointer">
-            <a>
-                <img src="../../../assets/All Products.png" class="img-fluid h-75" alt="All Products">
-                <h6>All Products</h6>
-            </a>
-        </div>
-        <div class="item col-1 ms-4 text-center pointer">
-            <a>
-                <img src="../../../assets/Electronics.png" class="img-fluid h-75" alt="Electronics">
-                <h6>Electronics</h6>
-            </a>
-        </div>
-        <div class="item col-1 ms-4 text-center pointer">
-            <a>
-                <img src="../../../assets/Sports.png" class="img-fluid h-75" alt="Sports">
-                <h6>Sports</h6>
-            </a>
-        </div>
-        <div class="item col-1 text-center pointer">
-            <a>
-                <img src="../../../assets/Mens Wear.png" class="img-fluid h-75" alt="Mens Wear">
-                <h6>Mens Wear</h6>
-            </a>
-        </div>
+  <div class="row justify-content-center h-75">
+    <div class="item col-1 text-center pointer">
+      <a>
+        <img src="../../../assets/All Products.png" class="img-fluid h-75" alt="All Products">
+        <h6>All Products</h6>
+      </a>
     </div>
+    <div class="item col-1 ms-4 text-center pointer">
+      <a>
+        <img src="../../../assets/Electronics.png" class="img-fluid h-75" alt="Electronics">
+        <h6>Electronics</h6>
+      </a>
+    </div>
+    <div class="item col-1 ms-4 text-center pointer">
+      <a>
+        <img src="../../../assets/Sports.png" class="img-fluid h-75" alt="Sports">
+        <h6>Sports</h6>
+      </a>
+    </div>
+    <div class="item col-1 text-center pointer">
+      <a>
+        <img src="../../../assets/Mens Wear.png" class="img-fluid h-75" alt="Mens Wear">
+        <h6>Mens Wear</h6>
+      </a>
+    </div>
+  </div>
 </div>
 
 <!-- Product List Section -->
 <div class="container">
-    <div class="row text-center justify-content-between">
-        <ng-container *ngFor="let item of productList">
-            <div class="card col-md-2 mb-2">
-                <img [src]="item.image" [alt]="item.title" class="img-fluid prdImg m-auto">
-                <h5 style="font-size: 1rem;">{{item.title}}</h5>
-                <hr>
-                <h6>{{item.price|currency:'EGP'}}</h6>
-                <!-- <p id="PrdDesc">{{item.description}}</p> -->
-                <button class="btn btn-outline-info">Add to Cart</button>
-            </div>
-        </ng-container>
-    </div>
+  <div class="row text-center justify-content-between">
+    <ng-container *ngFor="let item of productList">
+      <div class="card col-md-2 mb-2">
+        <img [src]="item.image" [alt]="item.title" class="img-fluid prdImg m-auto">
+        <h5 style="font-size: 1rem;">{{item.title}}</h5>
+        <hr>
+        <h6>{{item.price|currency:'EGP'}}</h6>
+        <!-- <p id="PrdDesc">{{item.description}}</p> -->
+        <button class="btn btn-outline-info" (click)="addToCart(item)">Add to Cart</button>
+      </div>
+    </ng-container>
+  </div>
 </div>
