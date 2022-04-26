@@ -16,6 +16,10 @@ export class ProductsComponent implements OnInit {
   ngOnInit(): void {
     this.api.getAllProducts().subscribe(res => {
       this.productList = res;
+
+      this.productList.forEach((a: any) => {
+        Object.assign(a, { quantity: 1, total: a.price });
+      });
     })
   }
 

@@ -1,25 +1,25 @@
 <header>
-    <!--* NAVBAR -->
-    <div class="navbar navbar-dark bg-info shadow-sm">
-        <div class="navbar-brand align-item-center d-flex">
+  <!--* NAVBAR -->
+  <div class="navbar navbar-dark bg-info shadow-sm">
+    <div class="navbar-brand align-item-center d-flex">
 
-            <!-- Logo Brand -->
-            <i class="fas fa-shipping-fast" style="font-size: 2.5rem;color:#232a25">&nbsp;</i>
-            <strong id="brand">FlyBay</strong>
+      <!-- Logo Brand -->
+      <i class="fas fa-shipping-fast" style="font-size: 2.5rem;color:#232a25">&nbsp;</i>
+      <strong id="brand">FlyBay</strong>
 
-            <!-- Search Input -->
-            <div class="form-group mt-2 rel">
-                <input type="text" class="form-control" placeholder="Search Product">
-                <span class="fas fa-search search-icon"></span>
-            </div>
-
-        </div>
-
-        <!-- Cart Button -->
-        <button class="btn btn-info me-3" routerLink="Cart">
-            <i class="fas fa-cart-plus"></i>
-            <div class="badge bg-danger" style="font-size: 0.45rem;">5</div>
-        </button>
+      <!-- Search Input -->
+      <div class="form-group mt-2 rel">
+        <input type="text" class="form-control" placeholder="Search Product">
+        <span class="fas fa-search search-icon"></span>
+      </div>
 
     </div>
+
+    <!-- Cart Button -->
+    <button class="btn btn-info me-3" routerLink="Cart">
+      <i class="fas fa-cart-plus" style="font-size: 1.5rem;"></i>
+      <div class="badge bg-danger" style="font-size: 0.6rem;">{{totalItems}}</div>
+    </button>
+
+  </div>
 </header>
